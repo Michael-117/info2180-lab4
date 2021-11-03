@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Avengers Character Search</h1>
-    <button id="button" onclick="search()">Search</button>
+    <form name= "hero-form" action="" onsubmit="search(); return false;">
+        <input id="searchbox" placeholder="e.g. Captain America or Steve Rogers" type="text">
+        <button id="button" type="submit">Search</button>
+    </form>
+    <div id="result"></div>
+    <div id="search-query"></div>
 </body>
